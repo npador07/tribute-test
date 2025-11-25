@@ -6,32 +6,66 @@ function App() {
 
   return (
 
-    <body className="bg-gray-300 min-h-screen">
+    <body className="bg-white min-h-screen">
   <div className="App">
-    <header className="bg-gray-900 text-white p-6 flex justify-between">
-      <h1 className="font-bold">Nebula Watch</h1>
+  <header className="bg-gray-900 text-white p-5">
+  <div className="flex justify-between items-center">
+    <h1 className="font-bold">Nebula Watch</h1>
 
+    <div className="flex items-center space-x-4">
+      {/* Menu button */}
       <button 
-        className="md:hidden" 
+        className="md:hidden"
         onClick={() => setOpen(!open)}
       >
         Menu
       </button>
 
-      <nav className={`${open ? 'block' : 'hidden'} md:flex space-x-6`}>
-        <a>Features</a>
-        <a>Pricing</a>
+      {/* Mobile + Desktop nav in one place */}
+      <nav
+        className={`flex space-x-4 transition-all duration-300 
+        ${open ? "w-auto opacity-100" : "w-0 opacity-0 overflow-hidden"} 
+        md:w-auto md:opacity-100 md:overflow-visible`}
+      >
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
       </nav>
-    </header>
+    </div>
+  </div>
+</header>
 
-    <section className="text-center py-20 bg-gradient-to-r from-indigo-600 to-blue-500 text-white">
+
+
+    <section className="text-center py-20 bg-gradient-to-r from-green-600 to-green-500 text-white">
       <h2 className="text-4xl font-bold mb-3">The All-New Nebula Watch</h2>
+      <img src="/images/NebulaWatch.jpg" alt="Nebula Watch" className="mx-auto mb-3 w-200 h-100 object-cover rounded-lg shadow-lg" />
       <p className="mb-6">The GWAT (Greatest Watch of All Time)</p>
       <a href="#pricing" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold">
         Buy Now 
       </a>
+      
     </section>
-  </div>
+    <section id="features" className="py-20 px-5">
+      <h3 className="text-3xl font-bold mb-6 text-center">Features</h3>
+      <ul className="max-w-3xl mx-auto space-y-4 list-disc list-inside">
+        <li>Stunning AMOLED display with always-on functionality.</li>
+        <li>Advanced health monitoring: heart rate, SpO2, ECG, and sleep tracking.</li>
+        <li>Built-in GPS for accurate activity tracking.</li>
+        <li>Water-resistant up to 50 meters.</li>
+        <li>Long-lasting battery life with fast charging.</li>
+      </ul>
+    </section>
+    <section id="pricing" className="bg-gray-100 py-20 px-5 text-center">
+      <h3 className="text-3xl font-bold mb-6">Pricing</h3>
+      <p className="text-2xl mb-6">$399.99</p>
+      <a href="#" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold">
+        Purchase Nebula Watch
+      </a>
+    </section>
+    <footer className="bg-gray-900 text-white text-center p-5">
+      <p>&copy; 2024 Nebula Watch. All rights reserved.</p>
+    </footer>
+    </div>
 </body>
 
   )
