@@ -6,7 +6,7 @@ function App() {
 
   return (
 
-    <body className="bg-gradient-to-r from-blue-900 to-green-800 min-h-screen">
+    <div className="bg-gradient-to-r from-blue-900 to-green-800 min-h-screen">
   <div className="App">
   <header className="bg-gray-900 text-white p-5">
   <div className="flex justify-between items-center">
@@ -64,6 +64,7 @@ function App() {
     <div className="p-6 rounded-xl bg-white/10 backdrop-blur-lg shadow-lg">
       <h1 className="text-2xl font-bold mb-2">Basic</h1>
       <p className="mb-3">128GB</p>
+      <p className="font-bold">250$</p>
       <button className="mt-4 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-xl transition">
         Choose Plan
       </button>
@@ -73,7 +74,8 @@ function App() {
     <div className="p-6 rounded-xl bg-white/10 backdrop-blur-lg shadow-lg">
       <h1 className="text-2xl font-bold mb-2">Plus</h1>
       <p>256GB</p>
-      <p>Unlimited Internet</p>
+      <p className="mb-3">Unlimited Internet</p>
+      <p className="font-bold"> 300$ </p>
       <button className="mt-4 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-xl transition">
         Choose Plan
       </button>
@@ -84,7 +86,8 @@ function App() {
       <h1 className="text-2xl font-bold mb-2">Premium</h1>
       <p>512GB</p>
       <p>Unlimited Internet</p>
-      <p>Solar Powered</p>
+      <p className="mb-3">Solar Powered</p>
+      <p className="font-bold">500$</p>
       <button className="mt-4 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-xl transition">
         Choose Plan
       </button>
@@ -98,7 +101,7 @@ function App() {
       <p> npador07@gmail.com </p>
     </footer>
     </div>
-</body>
+</div>
 
   )
 }
