@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import watchImage from "./assets/NebulaWatch.jpg"; // <-- place your image in src/assets/
+import watchImage from "./assets/NebulaWatch.jpg";
 
 function App() {
   const [open, setOpen] = useState(false);
