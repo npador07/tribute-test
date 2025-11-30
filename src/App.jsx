@@ -55,16 +55,47 @@ function App() {
         <li>Long-lasting battery life with fast charging.</li>
       </ul>
     </section>
-    <section id="pricing" className=" py-20 px-5 text-center">
-      <h3 className="text-3xl font-bold mb-6 text-white">Pricing</h3>
-      <div className="grid grid-cols-3 md:grid-cols-3 gap-20 max-w-4xl mx-auto text-white">
-          <div><h1 className="text-2xl font-bold">Basic</h1></div>
-          <div><h1 className="text-2xl font-bold">Plus</h1></div>
-          <div><h1 className="text-2xl font-bold">Premium</h1></div>
-      </div>
-    </section>
+    <section id="pricing" className="py-20 px-5 text-center">
+  <h3 className="text-3xl font-bold mb-6 text-white">Pricing</h3>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-20 max-w-4xl mx-auto text-white">
+
+    {/* Basic */}
+    <div className="p-6 rounded-xl bg-white/10 backdrop-blur-lg shadow-lg">
+      <h1 className="text-2xl font-bold mb-2">Basic</h1>
+      <p className="mb-3">128GB</p>
+      <button className="mt-4 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-xl transition">
+        Choose Plan
+      </button>
+    </div>
+
+    {/* Plus */}
+    <div className="p-6 rounded-xl bg-white/10 backdrop-blur-lg shadow-lg">
+      <h1 className="text-2xl font-bold mb-2">Plus</h1>
+      <p>256GB</p>
+      <p>Unlimited Internet</p>
+      <button className="mt-4 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-xl transition">
+        Choose Plan
+      </button>
+    </div>
+
+    {/* Premium */}
+    <div className="p-6 rounded-xl bg-white/10 backdrop-blur-lg shadow-lg">
+      <h1 className="text-2xl font-bold mb-2">Premium</h1>
+      <p>512GB</p>
+      <p>Unlimited Internet</p>
+      <p>Solar Powered</p>
+      <button className="mt-4 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-xl transition">
+        Choose Plan
+      </button>
+    </div>
+
+  </div>
+</section>
+
     <footer className="bg-gray-900 text-white text-center p-5">
       <p>&copy; 2025 Nebula Watch. All rights reserved.</p>
+      <p> npador07@gmail.com </p>
     </footer>
     </div>
 </body>
