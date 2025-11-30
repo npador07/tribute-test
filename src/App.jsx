@@ -44,7 +44,7 @@ function App() {
         <img
           src={watchImage}
           alt="Nebula Watch"
-          className="mx-auto mb-3 w-80 h-40 object-cover rounded-lg shadow-lg"
+          className="mx-auto mb-3 w-200 h-100 object-cover rounded-lg shadow-lg"
         />
         <p className="mb-6">The GWAT (Greatest Watch of All Time)</p>
         <a
